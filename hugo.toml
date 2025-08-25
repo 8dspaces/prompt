@@ -1,46 +1,63 @@
-baseURL = 'https://username.github.io/repository-name/'
+baseURL = 'https://username.github.io/prompt/'
 languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
 title = 'Prompts Space'
-theme = 'stack'
+theme = 'hugo-coder'
+enableEmoji = true
+
+[pagination]
+pagerSize = 6
+
+[markup]
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
-  mainSections = ['posts']
-  featuredImageField = 'image'
-  rssFullContent = true
-  favicon = ''
+author = "Prompts Space"
+description = "AI 改变世界，prompt改变AI"
+keywords = "blog,AI,prompt,开发者,个人"
+info = ["全栈开发/测试架构师/Pythoner", "AI专家"]
+dateFormat = "2006年1月2日"
+since = 2024
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
 
-  [params.footer]
-    since = 2024
-    customText = ''
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
 
-  [params.dateFormat]
-    published = 'Jan 02, 2006'
-    lastUpdated = 'Jan 02, 2006 15:04 MST'
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/"
 
-  [params.sidebar]
-    emoji = '🚀'
-    subtitle = 'AI 改变世界，prompt改变AI'
+[languages.zh-cn]
+languageName = "🇨🇳"
 
-  [params.article]
-    math = false
-    toc = true
-    readingTime = true
-    [params.article.license]
-      enabled = false
-      default = 'Licensed under CC BY-NC-SA 4.0'
+[[languages.zh-cn.menu.main]]
+name = "关于"
+weight = 1
+url = "about/"
 
-  [params.comments]
-    enabled = false
+[[languages.zh-cn.menu.main]]
+name = "博客"
+weight = 2
+url = "posts/"
 
-  [params.widgets]
-    homepage = []
-    page = []
+[[languages.zh-cn.menu.main]]
+name = "项目"
+weight = 3
+url = "projects/"
 
-[menu]
-  [[menu.main]]
-    identifier = 'home'
-    name = 'Home'
-    url = '/'
-    weight = -100
-    [menu.main.params]
-      icon = 'home'
+[[languages.zh-cn.menu.main]]
+name = "联系"
+weight = 5
+url = "contact/"
