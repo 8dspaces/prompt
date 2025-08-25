@@ -1,0 +1,46 @@
+baseURL = 'https://username.github.io/repository-name/'
+languageCode = 'zh-cn'
+title = 'Prompts Space'
+theme = 'stack'
+
+[params]
+  mainSections = ['posts']
+  featuredImageField = 'image'
+  rssFullContent = true
+  favicon = ''
+
+  [params.footer]
+    since = 2024
+    customText = ''
+
+  [params.dateFormat]
+    published = 'Jan 02, 2006'
+    lastUpdated = 'Jan 02, 2006 15:04 MST'
+
+  [params.sidebar]
+    emoji = '🚀'
+    subtitle = 'AI 改变世界，prompt改变AI'
+
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
+    [params.article.license]
+      enabled = false
+      default = 'Licensed under CC BY-NC-SA 4.0'
+
+  [params.comments]
+    enabled = false
+
+  [params.widgets]
+    homepage = []
+    page = []
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = -100
+    [menu.main.params]
+      icon = 'home'
